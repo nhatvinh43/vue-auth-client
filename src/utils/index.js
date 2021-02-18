@@ -1,1 +1,1 @@
-export * from './NetworkUtils';
+export * from "./NetworkUtils";
