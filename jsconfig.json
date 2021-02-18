@@ -1,0 +1,31 @@
+{
+    "include": [
+        "./src/**/*"
+    ],
+    "compilerOptions": {
+        "baseUrl": "./src",
+        "paths": {
+            "@components": [
+                "./components"
+            ],
+            "@assets": [
+                "./assets"
+            ],
+            "@shared-components": [
+                "./shared-components"
+            ],
+            "@store": [
+                "./store"
+            ],
+            "@router": [
+                "./router"
+            ],
+            "@app": [
+                "./"
+            ],
+        }
+    },
+    "exclude": [
+        "node_modules"
+    ]
+}
