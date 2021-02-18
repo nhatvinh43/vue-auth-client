@@ -13,7 +13,7 @@
       />
     </div>
 
-    <button type="submit">Login</button>
+    <button type="submit">Log in</button>
   </form>
 </template>
 
@@ -36,5 +36,3 @@ export default {
   }
 };
 </script>
-
-<style></style>

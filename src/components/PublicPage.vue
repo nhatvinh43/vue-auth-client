@@ -7,5 +7,3 @@ export default {
   name: "PublicPage"
 };
 </script>
-
-<style></style>

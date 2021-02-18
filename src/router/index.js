@@ -1,7 +1,7 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "@components/Login";
-import Register from "@components/Register";
+import Signup from "@components/Signup";
 import PrivatePage from "@components/PrivatePage";
 import PublicPage from "@components/PublicPage";
 
@@ -14,9 +14,9 @@ const routes = [
     component: Login
   },
   {
-    path: "/register",
-    name: "register",
-    component: Register
+    path: "/signup",
+    name: "signup",
+    component: Signup
   },
   {
     path: "/private-page",

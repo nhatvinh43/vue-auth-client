@@ -8,8 +8,8 @@
     </div>
 
     <div v-else class="auth-buttons">
-      <router-link to="/register">
-        <button>Register</button>
+      <router-link to="/signup">
+        <button>Sign up</button>
       </router-link>
       <router-link to="/login">
         <button>Login</button>
@@ -32,4 +32,3 @@ export default {
   }
 };
 </script>
-<style scoped></style>

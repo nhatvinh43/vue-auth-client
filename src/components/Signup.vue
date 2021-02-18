@@ -2,12 +2,12 @@
   <div>
     <form @submit.prevent="handleSubmit" action="#">
       <div>
-        <input id="register-email" v-model="email" placeholder="Email" />
+        <input id="sign-up-email" v-model="email" placeholder="Email" />
       </div>
 
       <div>
         <input
-          id="register-password"
+          id="sign-up-password"
           v-model="password"
           placeholder="Password"
           type="password"
@@ -16,21 +16,21 @@
 
       <div>
         <input
-          id="register-password-confirm"
+          id="sign-up-password-confirm"
           v-model="passwordConfirm"
           placeholder="Confrim Password"
           type="password"
         />
       </div>
 
-      <button type="submit">register</button>
+      <button type="submit">Sign up</button>
     </form>
   </div>
 </template>
 
 <script>
 export default {
-  name: "Register",
+  name: "Signup",
   data() {
     return {
       email: "",
@@ -40,14 +40,11 @@ export default {
   },
   methods: {
     handleSubmit: function() {
-      this.$store.dispatch("registerAsync", {
+      this.$store.dispatch("signUpAsync", {
         email: this.email,
-        password: this.password,
-        passwordConfirm: this.passwordConfirm
+        password: this.password
       });
     }
   }
 };
 </script>
-
-<style></style>
