@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Login from "@components/Login";
 import Register from "@components/Register";
+import PrivatePage from "@components/PrivatePage";
 
 Vue.use(VueRouter);
 
@@ -15,6 +16,11 @@ const routes = [
     path: "/register",
     name: "register",
     component: Register
+  },
+  {
+    path: "/private-page",
+    name: "private-page",
+    component: PrivatePage
   }
 ];
 
