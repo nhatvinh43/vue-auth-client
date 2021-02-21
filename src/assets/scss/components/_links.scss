@@ -1,0 +1,11 @@
+@import "../utilities/variables";
+.link {
+  text-decoration: none;
+  outline: none;
+  color: $dark;
+  transition-duration: 200ms;
+
+  &:hover {
+    color: $primary;
+  }
+}

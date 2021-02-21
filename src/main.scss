@@ -1,0 +1,16 @@
+// Base
+@import "./assets/scss/base/typography";
+@import "./assets/scss/base/reset";
+
+// Components
+@import "./assets/scss/components/buttons";
+@import "./assets/scss/components/inputs";
+@import "./assets/scss/components/forms";
+@import "./assets/scss/components/links";
+
+// Layouts
+@import "./assets/scss/layouts/Login";
+@import "./assets/scss/layouts/Signup";
+@import "./assets/scss/layouts/Header";
+@import "./assets/scss/layouts/PrivatePage";
+@import "./assets/scss/layouts/PublicPage";

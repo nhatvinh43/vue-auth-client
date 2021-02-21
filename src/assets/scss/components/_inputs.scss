@@ -1,0 +1,15 @@
+@import "../utilities/variables";
+
+.input {
+  height: 24px;
+  border-radius: 20px;
+  outline: none;
+  border: 1px solid $dark-gray;
+  padding: 8px 16px;
+  width: 240px;
+  transition-duration: 200ms;
+
+  &:focus {
+    box-shadow: 0px 5px 10px rgba($dark-gray, 0.5);
+  }
+}

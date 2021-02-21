@@ -1,0 +1,47 @@
+@import "../utilities/variables";
+
+%btn {
+  height: 36px;
+  padding: 8px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  border: none;
+  color: $white;
+  outline: none;
+  transition: 200ms ease-in-out;
+  cursor: pointer;
+
+  // Hover state
+  &:hover {
+    box-shadow: 0px 5px 10px rgb(190, 190, 190);
+    transform: translateY(-0.5px);
+  }
+}
+
+%btn-outline {
+  @extend %btn;
+  background: none;
+  border: 1px solid;
+
+  &:hover {
+    box-shadow: none;
+    transform: translateY(-0.5px);
+  }
+}
+
+.btn-primary {
+  @extend %btn;
+  background-color: $primary;
+}
+
+.btn-ghost {
+  @extend %btn;
+  background-color: transparent;
+  color: $dark;
+}
+
+.btn-outline-danger {
+  @extend %btn-outline;
+  border-color: $danger;
+  color: $danger;
+}
