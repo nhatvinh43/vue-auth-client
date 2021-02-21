@@ -1,5 +1,5 @@
 <template>
-  <p>This is a public page</p>
+  <div id="public-page">This is a public page</div>
 </template>
 
 <script>
