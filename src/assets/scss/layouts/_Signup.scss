@@ -1,0 +1,14 @@
+#sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h2 {
+    margin-bottom: 16px;
+  }
+
+  .btn-primary {
+    margin-top: 32px;
+  }
+}

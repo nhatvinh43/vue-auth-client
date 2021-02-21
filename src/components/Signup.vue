@@ -1,12 +1,19 @@
 <template>
-  <div>
+  <div id="sign-up">
+    <h2 class="text-medium">Sign up</h2>
     <form @submit.prevent="handleSubmit" action="#">
       <div>
-        <input id="sign-up-email" v-model="email" placeholder="Email" />
+        <input
+          class="input"
+          id="sign-up-email"
+          v-model="email"
+          placeholder="Email"
+        />
       </div>
 
       <div>
         <input
+          class="input"
           id="sign-up-password"
           v-model="password"
           placeholder="Password"
@@ -14,16 +21,7 @@
         />
       </div>
 
-      <div>
-        <input
-          id="sign-up-password-confirm"
-          v-model="passwordConfirm"
-          placeholder="Confrim Password"
-          type="password"
-        />
-      </div>
-
-      <button type="submit">Sign up</button>
+      <button class="btn-primary" type="submit">Sign up</button>
     </form>
   </div>
 </template>
@@ -34,8 +32,7 @@ export default {
   data() {
     return {
       email: "",
-      password: "",
-      passwordConfirm: ""
+      password: ""
     };
   },
   methods: {
