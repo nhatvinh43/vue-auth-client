@@ -1,5 +1,5 @@
 <template>
-  <p>This is a private page</p>
+  <div class="private-page">This is a private page</div>
 </template>
 
 <script>
