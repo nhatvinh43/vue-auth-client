@@ -1,20 +1,29 @@
 <template>
-  <form @submit.prevent="handleSubmit" action="#">
-    <div>
-      <input id="login-email" v-model="email" placeholder="Email" />
-    </div>
+  <div id="login">
+    <h2 class="text-medium">Login</h2>
+    <form id="login-form" @submit.prevent="handleSubmit" action="#">
+      <div>
+        <input
+          class="input"
+          id="login-email"
+          v-model="email"
+          placeholder="Email"
+        />
+      </div>
 
-    <div>
-      <input
-        id="login-password"
-        v-model="password"
-        placeholder="Password"
-        type="password"
-      />
-    </div>
+      <div>
+        <input
+          class="input"
+          id="login-password"
+          v-model="password"
+          placeholder="Password"
+          type="password"
+        />
+      </div>
 
-    <button type="submit">Log in</button>
-  </form>
+      <button class="btn-primary" type="submit">Log in</button>
+    </form>
+  </div>
 </template>
 
 <script>
